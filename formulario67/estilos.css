@@ -1,0 +1,168 @@
+/* Formulario Expo 2026 - colores fríos y suaves, una tarjeta por pregunta */
+.mostrar-fecha::before {
+    content: "30/10/2026";
+    font-family: Arial, sans-serif; /* Podés cambiar la tipografía */
+    font-size: 16px;               /* Ajusta el tamaño de la letra */
+    color: #333333;               /* El color del texto */
+    font-weight: bold;            /* Hace que la fecha resalte en negrita */
+  }
+  
+:root {
+    --fondo: #cceaff;
+    --fondo-2: #dbe7f3;
+    --tarjeta: #f8fbfd;
+    --titulo: #4a6b8a;
+    --texto: #3f5568;
+    --acento: #7fa8c9;
+    --acento-suave: #cfe0ee;
+    --borde: #c3d6e6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: linear-gradient(160deg, var(--fondo), var(--fondo-2)) fixed;
+}
+
+/* Columna central que contiene todas las tarjetas */
+body {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 40px 16px 60px;
+    color: var(--texto);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cada bloque (encabezado, datos y cada pregunta) es una tarjeta */
+.tarjeta {
+    margin-bottom: 20px;
+    padding: 24px 28px;
+    background: var(--tarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(74, 107, 138, 0.12);
+}
+
+.encabezado {
+    text-align: center;
+}
+
+h1 {
+    margin: 0 0 8px;
+    color: var(--titulo);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    margin: 0 0 14px;
+    color: var(--titulo);
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+p {
+    margin: 0;
+}
+
+/* Campos de texto y número */
+.campo + .campo {
+    margin-top: 16px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--titulo);
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 1rem;
+    color: var(--texto);
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-radius: 10px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: var(--acento);
+    box-shadow: 0 0 0 3px rgba(127, 168, 201, 0.3);
+}
+
+/* Opciones de respuesta */
+.opcion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+    padding: 9px 12px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+}
+
+.opcion:hover {
+    background: rgba(207, 224, 238, 0.5);
+}
+
+.opcion:has(input:checked) {
+    background: var(--acento-suave);
+    border-color: var(--acento);
+}
+
+input[type="radio"] {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: var(--acento);
+    cursor: pointer;
+}
+
+/* Botón de enviar */
+button[type="submit"] {
+    display: block;
+    margin: 28px auto 0;
+    padding: 12px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--acento);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(127, 168, 201, 0.4);
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: var(--titulo);
+    box-shadow: 0 6px 16px rgba(74, 107, 138, 0.35);
+}
+
+button[type="submit"]:active {
+    transform: scale(0.97);
+}
+
+/* Adaptación a celulares */
+@media (max-width: 700px) {
+    body {
+        padding: 20px 12px 40px;
+    }
+
+    .tarjeta {
+        padding: 20px;
+    }
+}

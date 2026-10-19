@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Expo 2026</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <form action="Contacto.html" method="get">
+
+        <header class="tarjeta encabezado">
+            <h1>Formulario Expo 2026</h1>
+            <p>Los datos se guardarán en una base de datos para sacar porcentajes de la población.</p>
+        </header>
+
+        <section class="tarjeta">
+            <div class="campo">
+                <label for="usuario">Ingrese nombre de usuario</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="campo">
+                <label for="edad">Ingrese su edad</label>
+                <div class="mostrar-fecha"></div>
+
+            </div>
+                 </section>
+
+        <section class="tarjeta">
+            <h3>1- ¿Con qué frecuencia utiliza aparatos electrónicos?</h3>
+            <label class="opcion"><input type="radio" name="pregunta1" value="todos_los_dias" required>Todos los días</label>
+            <label class="opcion"><input type="radio" name="pregunta1" value="varias_por_semana">Varias veces por semana</label>
+            <label class="opcion"><input type="radio" name="pregunta1" value="ocasionalmente">Ocasionalmente</label>
+            <label class="opcion"><input type="radio" name="pregunta1" value="casi_nunca">Casi nunca</label>
+        </section>
+
+        <section class="tarjeta">
+            <h3>2- ¿Sabes lo que son los desechos tecnológicos?</h3>
+            <label class="opcion"><input type="radio" name="pregunta2" value="si" required>Sí, conozco el tema</label>
+            <label class="opcion"><input type="radio" name="pregunta2" value="idea_general">Tengo una idea general</label>
+            <label class="opcion"><input type="radio" name="pregunta2" value="no">No, nunca escuché hablar del tema</label>
+        </section>
+
+        <section class="tarjeta">
+            <h3>3- ¿Qué elementos consideras que son desechos electrónicos?</h3>
+            <label class="opcion"><input type="radio" name="pregunta3" value="celulares" required>Celulares en desuso</label>
+            <label class="opcion"><input type="radio" name="pregunta3" value="computadoras">Computadoras y netbooks</label>
+            <label class="opcion"><input type="radio" name="pregunta3" value="tv_monitores">Televisores y monitores</label>
+            <label class="opcion"><input type="radio" name="pregunta3" value="cargadores_cables">Cargadores y cables</label>
+            <label class="opcion"><input type="radio" name="pregunta3" value="heladeras_lavarropas">Heladeras y lavarropas</label>
+            <label class="opcion"><input type="radio" name="pregunta3" value="todos">Todos los anteriores</label>
+        </section>
+
+        <section class="tarjeta">
+            <h3>4- ¿Crees que los desechos electrónicos pueden contaminar el ambiente?</h3>
+            <label class="opcion"><input type="radio" name="pregunta4" value="si" required>Sí</label>
+            <label class="opcion"><input type="radio" name="pregunta4" value="algunos">Conozco algunos</label>
+            <label class="opcion"><input type="radio" name="pregunta4" value="no">No</label>
+        </section>
+
+        <section class="tarjeta">
+            <h3>5- ¿Qué haces habitualmente con los aparatos electrónicos que ya no usas?</h3>
+            <label class="opcion"><input type="radio" name="pregunta5" value="guardo" required>Los guardo en casa</label>
+            <label class="opcion"><input type="radio" name="pregunta5" value="basura">Los tiro a la basura común</label>
+            <label class="opcion"><input type="radio" name="pregunta5" value="reparo">Los reparo para seguir utilizándolos</label>
+            <label class="opcion"><input type="radio" name="pregunta5" value="regalo_dono">Los regalo o dono</label>
+            <label class="opcion"><input type="radio" name="pregunta5" value="vendo">Los vendo</label>
+            <label class="opcion"><input type="radio" name="pregunta5" value="reciclaje">Los llevo a un punto de recolección o reciclaje</label>
+        </section>
+
+        <section class="tarjeta">
+            <h3>6- ¿Qué haces con los celulares viejos, cargadores y cables que no necesitas?</h3>
+            <label class="opcion"><input type="radio"  value="guardo" required>Los guardo</label>
+            <label class="opcion"><input type="radio"  value="basura">Los tiro a la basura</label>
+            <label class="opcion"><input type="radio"  value="regalo">Los regalo</label>
+            <label class="opcion"><input type="radio"  value="vendo">Los vendo</label>
+            <label class="opcion"><input type="radio"  value="recoleccion">Los llevo a un lugar de recolección</label>
+            <label class="opcion"><input type="radio"  value="otra">Otra opción</label>
+        </section>
+
+        <section class="tarjeta"> 
+            <h3>7- ¿Con qué frecuencia cambias tu celular o otro aparato?</h3>
+            <label class="opcion"><input type="radio" name="pregunta7" value="deja_de_funcionar" required>Cuando deja de funcionar</label>
+            <label class="opcion"><input type="radio" name="pregunta7" value="no_cumple">Cuando ya no cumple mis necesidades</label>
+            <label class="opcion"><input type="radio" name="pregunta7" value="modelo_nuevo">Cuando aparece un modelo nuevo</label>
+            <label class="opcion"><input type="radio" name="pregunta7" value="sin_frecuencia">No tengo una frecuencia definida</label>
+            <label class="opcion"><input type="radio" name="pregunta7" value="1_o_2_anios">Cada 1 o 2 años</label>
+        </section>
+
+        <section class="tarjeta">
+            <h3>8-¿Sabe a donde llevar los desechos electrónicos para que reciban un tratamiento adecuado?</h3><br>
+            <label class="opcion"><input type="radio" name="pregunta8" value="si" required>Si, conozco lugares de recolección</label>
+            <label class="opcion"><input type="radio" name="pregunta8" value="No_conozco">Se que estan pero no conozco su ubicación</label>
+            <label class="opcion"><input type="radio" name="pregunta8" value="no">No, no se donde llevarlos</label>
+        </section>
+        
+        <section class="tarjeta">
+            <h3>9-¿Estaría dispuesto/a a separar los residuos electrónicos de la basura común?</h3><br>
+            <label class="opcion"><input type="radio" name="pregunta9" value="si" required>Si</label>
+            <label class="opcion"><input type="radio" name="pregunta9" value="no">No</label>
+            <label class="opcion"><input type="radio" name="pregunta9" value="tal_vez">Tal vez</label>
+        </section>
+        
+        <section class="tarjeta">
+            <h3>10-¿Que dificultad encuentra para reciclar o entregar correctamente estos residuos?</h3><br>
+            <label class="opcion"><input type="radio" name="pregunta10" value="si" required>No conozco lugares de recolección</label>
+            <label class="opcion"><input type="radio" name="pregunta10" value="no">No hay puntos cercanos</label>
+            <label class="opcion"><input type="radio" name="pregunta10" value="no_informacion">No tengo información suficiente</label>
+        </section>
+        
+        <section class="tarjeta">
+            <h3>11-¿Considera que la población esta suficientemente informada sobre los riesgos de estos desechos?</h3><br>
+            <label class="opcion"><input type="radio" name="pregunta11" value="si" required>Si</label>
+            <label class="opcion"><input type="radio" name="pregunta11" value="no">No</label>
+            <label class="opcion"><input type="radio" name="pregunta11" value="probablemnte">Probablemente</label>
+        </section>
+
+        <button type="submit">Siguiente</button>
+
+    </form>
+</body>
+</html>
